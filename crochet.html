@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Melis Collection Crochet — Handmade crochet tops, bags, hats, cardigans & more.">
+  <title>Crochet | Melis Collection</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌸</text></svg>">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<nav class="navbar" id="navbar">
+  <a href="index.html" class="nav-logo">
+    <div class="nav-logo-icon">🌸</div>
+    <span class="nav-logo-text">Melis Collection</span>
+  </a>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="crochet.html" class="active">Crochet</a></li>
+    <li><a href="jewellery.html">Jewellery</a></li>
+    <li><a href="wigs.html">Wigs</a></li>
+    <li><a href="skincare.html">Skincare</a></li>
+    <li><a href="bakery.html">Bakery</a></li>
+    <li><a href="rentals.html">Rentals</a></li>
+    <li><a href="https://wa.me/26774223402" target="_blank" class="nav-cta">Order Now 💬</a></li>
+  </ul>
+  <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+</nav>
+
+<div class="breadcrumb-bar">
+  <a href="index.html">Home</a> › <span>Crochet</span>
+</div>
+
+<section class="page-hero">
+  <span class="page-hero-icon">🧶</span>
+  <h1 class="page-hero-title">Crochet Collection</h1>
+  <p class="page-hero-desc">Every piece is lovingly handmade. Unique, wearable art crafted just for you.</p>
+</section>
+
+<section class="products-section">
+  <div class="filter-bar">
+    <button class="filter-btn active" data-filter="all">All Items</button>
+    <button class="filter-btn" data-filter="tops">Tops</button>
+    <button class="filter-btn" data-filter="accessories">Accessories</button>
+    <button class="filter-btn" data-filter="bags">Bags</button>
+    <button class="filter-btn" data-filter="sets">Sets</button>
+  </div>
+  <div class="products-grid" id="crochetGrid"></div>
+</section>
+
+<!-- Product Modal -->
+<div class="modal-overlay" id="productModal">
+  <div class="modal-box">
+    <div class="modal-img-wrap">
+      <img id="modalImg" src="" alt="">
+      <button class="modal-close">✕</button>
+    </div>
+    <div class="modal-content">
+      <span class="modal-badge" id="modalBadge"></span>
+      <h2 class="modal-title" id="modalTitle"></h2>
+      <p class="modal-desc" id="modalDesc"></p>
+      <div class="modal-price" id="modalPrice"></div>
+      <div class="modal-details" id="modalDetails"></div>
+      <a class="btn-buy-now" id="modalBuyBtn" href="#" target="_blank">
+        💬 Buy Now via WhatsApp
+      </a>
+    </div>
+  </div>
+</div>
+
+<footer class="footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="brand-name">🌸 Melis Collection</div>
+      <p>Handmade with love, curated for you.</p>
+      <div class="footer-social">
+        <a href="https://wa.me/26774223402" target="_blank" class="social-btn">💬</a>
+        <a href="#" class="social-btn">📸</a>
+        <a href="#" class="social-btn">👥</a>
+        <a href="https://www.tiktok.com/@meliscollection?_r=1&_t=ZS-954PNcrHjGr" target="_blank" class="social-btn" title="TikTok">🎵</a>
+      </div>
+    </div>
+    <div class="footer-col">
+      <h4>Shop</h4>
+      <ul>
+        <li><a href="crochet.html">🧶 Crochet</a></li>
+        <li><a href="jewellery.html">💍 Jewellery</a></li>
+        <li><a href="wigs.html">👑 Wigs</a></li>
+        <li><a href="skincare.html">🌿 Skincare & Hair</a></li>
+        <li><a href="bakery.html">🎂 Bakery & Catering</a></li>
+        <li><a href="rentals.html">🎪 Rentals</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Contact</h4>
+      <ul>
+        <li><a href="https://wa.me/26774223402" target="_blank">💬 +267 74 223 402</a></li>
+        <li><a href="index.html#contact">📧 Send a message</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Info</h4>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="index.html#reviews">Reviews</a></li>
+        <li><a href="index.html#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 <span>Melis Collection</span>. Made with 💕 and a touch of gold.</p>
+  </div>
+</footer>
+
+<div class="floating-buttons">
+  <a href="https://wa.me/26774223402?text=Hi!%20I%27m%20interested%20in%20your%20Crochet%20collection%20%F0%9F%A7%B6" target="_blank" class="float-btn float-btn-wa">
+    <span class="icon">💬</span><span>WhatsApp</span>
+  </a>
+  <button class="float-btn float-btn-chat" id="chatToggle">
+    <span class="icon">🌸</span><span>Live Chat</span>
+  </button>
+</div>
+
+<div class="chat-widget" id="chatWidget">
+  <div class="chat-header">
+    <div class="chat-avatar">🌸</div>
+    <div class="chat-info">
+      <div class="chat-name">Melis Collection</div>
+      <div class="chat-status">Online — ready to help!</div>
+    </div>
+    <button class="chat-close">✕</button>
+  </div>
+  <div class="chat-messages" id="chatMessages"></div>
+  <div class="chat-input-area">
+    <input type="text" class="chat-input" id="chatInput" placeholder="Ask about our crochet pieces...">
+    <button class="chat-send" id="chatSend">➤</button>
+  </div>
+  <div class="chat-wa-redirect">
+    <a href="https://wa.me/26774223402" target="_blank">💬 Chat instantly on WhatsApp</a>
+  </div>
+</div>
+
+<script src="js/products.js"></script>
+<script src="js/main.js"></script>
+<script>renderProducts('crochet', 'crochetGrid');</script>
+</body>
+</html>
